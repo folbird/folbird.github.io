@@ -1,0 +1,76 @@
+/*文章页卡片宽幅占比*/
+.layout {
+    max-width: 1280px;
+}
+/*文章页卡片圆角*/
+.layout > div:first-child:not(.recent-posts) {
+    border-radius: 50px;
+  }
+/*文章页目录卡片圆角*/
+#aside-content .card-widget {
+    border-radius: 20px;
+    }
+/*文章页目录美化*/
+#aside-content .card-widget {
+    padding: 2rem 1.2rem; /*前者为上下边距，后者为左右边距*/
+  }
+/*文章相关推荐卡片美化*/
+.relatedPosts > .relatedPosts-list > div {
+    border-radius: 20px;
+  }
+  #aside-content #card-toc .toc-content .toc-link.active {
+    background: #669cbe;
+    border-radius: 5px;
+  }
+/* 文章目录 */
+#aside-content #card-toc .toc-content {
+    margin: 10px -18px;
+    font-size: 18px;
+  }
+   #aside-content #card-toc .toc-content .toc-link.active {
+    line-height: 1.2;
+    border-radius: 12px;
+    border-left-color: var(--heo-hovertext);
+    background-color: var(--heo-card-bg);
+    color: var(--heo-lighttext);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  [data-theme=dark].toc .toc-item.active .toc-link .toc-text {
+    color: var(--heo-white);
+  }
+  #aside-content #card-toc .toc-content .toc-item.active .toc-link {
+    opacity: 1;
+    border-radius: 8px;
+  }
+  #aside-content #card-toc .toc-content .toc-link {
+    line-height: 1.2;
+    padding: 8px;
+    border-left: 0px solid transparent;
+    border-radius: 12px;
+    color: var(--heo-secondtext);
+    cursor: default;
+  }
+  #aside-content #card-toc .toc-content .toc-link:not(.active) span {
+    opacity: 1;
+    cursor: pointer;
+    /*filter: blur(1px);*/
+    transition: 0.3s;
+  }
+  #aside-content #card-toc:hover .toc-content .toc-link:not(.active) span {
+    /*filter: blur(0px);*/
+    opacity: 1;
+  }
+  #aside-content #card-toc .toc-content .toc-link:not(.active) span:hover {
+    color: var(--heo-lighttext);
+  }
+  /* 文章页背景 */
+  .layout>#post {
+      /* 以下代表白色透明度为0.3*/
+      background: rgba(255,255,255,.3);
+  }
+  /* 所有背景（包括首页卡片、文章页、页面页等） */
+  #aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+      /* 以下代表白色透明度为0.3 */
+      background: rgba(255,255,255,.3);
+  }

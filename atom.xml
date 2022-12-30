@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>folbird</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2022-12-29T13:39:17.467Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Jun Diao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>github+hexo搭建博客教程</title>
+    <link href="http://example.com/2022/12/29/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2/%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://example.com/2022/12/29/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2/%E5%88%A9%E7%94%A8github%E4%B8%8Ehexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2022-12-29T07:02:28.000Z</published>
+    <updated>2022-12-29T13:39:17.467Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="node配置"><a href="#node配置" class="headerlink" title="node配置"></a>node配置</h1><h2 id="安装node-js-用来运行npm包管理器"><a href="#安装node-js-用来运行npm包管理器" class="headerlink" title="安装node.js(用来运行npm包管理器)"></a>安装node.js(用来运行npm包管理器)</h2><p>到官网下载系统对应版本的node.js</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled.png"></p><p>按照默认配置选择下一步即可</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%201.png" alt="Untitled"></p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%202.png" alt="Untitled"></p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%203.png" alt="Untitled"></p><h2 id="检查node与npm下载是否完成"><a href="#检查node与npm下载是否完成" class="headerlink" title="检查node与npm下载是否完成"></a>检查node与npm下载是否完成</h2><p>按住Windows与R键，输入cmd打开</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%204.png" alt="Untitled"></p><p>输入node -v与npm -v检查，如果有版本号说明安装成功</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%205.png" alt="Untitled"></p><h2 id="准备配置"><a href="#准备配置" class="headerlink" title="准备配置"></a>准备配置</h2><p>在安装目录里新建两个文件夹node_cache与node_global</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%206.png" alt="Untitled"></p><p>打开命令终端（windows+R后输入cmd）,输入如下命令（上述新建的文件夹路劲）</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%207.png" alt="Untitled"></p><h2 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h2><p>右键此电脑点击属性</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%208.png" alt="Untitled"></p><p>选择高级系统设置</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%209.png" alt="Untitled"></p><p>点击环境变量</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2010.png" alt="Untitled"></p><p>点击path</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2011.png" alt="Untitled"></p><p>点击新建后在点击浏览</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2012.png" alt="Untitled"></p><p>选择node_modules文件夹即可</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2013.png" alt="Untitled"></p><h1 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h1><p>参考此博客<a href="https://www.cnblogs.com/xueweisuoyong/p/11914045.html">https://www.cnblogs.com/xueweisuoyong/p/11914045.html</a></p><h1 id="github仓库建立"><a href="#github仓库建立" class="headerlink" title="github仓库建立"></a>github仓库建立</h1><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2014.png" alt="Untitled"></p><h1 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h1><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>打开命令终端（windows+R后输入cmd）,输入如下命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure><h2 id="生成ssh"><a href="#生成ssh" class="headerlink" title="生成ssh"></a>生成ssh</h2><p>新建一个博客文件夹并在该文件夹目录下右键选择Git Bash Here</p><p>(输入如下命令点击3，4下enter键即可)</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;注册github用的邮箱账号&quot;</span></span><br></pre></td></tr></table></figure><h2 id="将ssh与github绑定"><a href="#将ssh与github绑定" class="headerlink" title="将ssh与github绑定"></a>将ssh与github绑定</h2><p>找到.ssh文件夹</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2015.png" alt="Untitled"></p><p>打开id_rsa.pub文件并复制里面内容</p><p>打开github设置并找到SSH and GPG keys</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2016.png" alt="Untitled"></p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2017.png" alt="Untitled"></p><p>到这里就绑定完成了，之后就是生成 本地博客</p><h2 id="生成本地博客"><a href="#生成本地博客" class="headerlink" title="生成本地博客"></a>生成本地博客</h2><p>打开博客文件夹并在该文件夹目录下右键选择Git Bash Here</p><p>输入hexo init</p><p>会发现博客文件夹目录生成了很多文件</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2018.png" alt="Untitled"></p><p>输入hexo s,此时本地博客已经启动完毕，浏览器地址栏输入htttp:&#x2F;&#x2F;localhost:4000&#x2F;即可访问</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2019.png" alt="Untitled"></p><h2 id="部署博客到github"><a href="#部署博客到github" class="headerlink" title="部署博客到github"></a>部署博客到github</h2><p>修改-config.yml文件</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2020.png" alt="Untitled"></p><p>将文件中的deploy部分改成</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">你的github地址</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure><p>github地址就是仓库地址</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2021.png" alt="Untitled"></p><p> 安装 hexo-deployer-git自动部署发布工具： <code>npm install hexo-deployer-git --save</code></p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2022.png" alt="Untitled"></p><p>hexo g生成页面</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2023.png" alt="Untitled"></p><p>hexo d上传到仓库中</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2024.png" alt="Untitled"></p><p><a href="https://www.notion.so/">https://www.notion.so</a></p><p>点击Token将秘钥粘贴进去即可（秘钥的获取；settings→Developer settings→Personal access tokens→Tokens(classic)）</p><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2025.png" alt="Untitled"></p><h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p><img src="https://raw.githubusercontent.com/pcture/pcture.github.io/main/Untitled%2026.png" alt="Untitled"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;node配置&quot;&gt;&lt;a href=&quot;#node配置&quot; class=&quot;headerlink&quot; title=&quot;node配置&quot;&gt;&lt;/a&gt;node配置&lt;/h1&gt;&lt;h2 id=&quot;安装node-js-用来运行npm包管理器&quot;&gt;&lt;a href=&quot;#安装node-js-用来运行np</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

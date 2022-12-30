@@ -1,0 +1,16 @@
+@font-face{
+    font-family: '得意黑';
+    font-display: swap;
+    src: url('G:\blogput\themes\butterfly\source\font\得意黑 TTF.ttf') format("truetype");
+}
+
+body {
+    font-family: "Microsoft YaHei", '得意黑'!important;
+}
+h1,h2,h3,h4,h5{
+    font-family:  '得意黑'!important;
+}
+p{
+    font-family: "得意黑";
+    font-size: 16px;
+}

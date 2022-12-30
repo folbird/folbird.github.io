@@ -1,0 +1,26 @@
+@font-face{
+    font-family:'HaiTiZhengKai' ;  /* 字体名自定义即可 */;
+    src:url('http://cdn.huangxiaokai.cn/FZZJ-HaiTZKJW.TTF'); /* 字体文件路径 */;
+    font-display : swap;
+  }
+  
+  .code-lang {
+    font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  }
+  
+  
+  li {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif!important
+  }
+  
+  .content {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif!important
+  }
+  
+  td {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif!important
+  }
+  
+  th {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif!important
+  }
